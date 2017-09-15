@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ceit_gwa_databaseModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CeitAdministrators">
+          <Key>
+            <PropertyRef Name="AdminId" />
+          </Key>
+          <Property Name="AdminId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AdminName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CeitCourse">
+          <Key>
+            <PropertyRef Name="CourseId" />
+          </Key>
+          <Property Name="CourseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Text" Type="nvarchar(max)" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CeitSecurityQuestions">
+          <Key>
+            <PropertyRef Name="QuestionsId" />
+          </Key>
+          <Property Name="SecurityQuestions" Type="nvarchar(max)" />
+          <Property Name="QuestionsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CeitStudents">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StudentNumber" Type="nvarchar(max)" />
+          <Property Name="FirstName" Type="nvarchar(max)" />
+          <Property Name="MiddleName" Type="nvarchar(max)" />
+          <Property Name="LastName" Type="nvarchar(max)" />
+          <Property Name="Gender" Type="nvarchar(max)" />
+          <Property Name="CourseId" Type="int" />
+          <Property Name="YearLevelId" Type="int" />
+          <Property Name="QuestionId" Type="int" />
+          <Property Name="Answer" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CeitUserRoles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Roles" Type="varchar(max)" />
+          <Property Name="RolesFor" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="CeitUsers">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentAccount" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Roles" Type="int" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="DateUpdated" Type="datetime" />
+          <Property Name="LoginAccount" Type="nvarchar(max)" />
+          <Property Name="AdminAccount" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CeitYearLevel">
+          <Key>
+            <PropertyRef Name="YearLevelId" />
+          </Key>
+          <Property Name="YearLevel" Type="nvarchar" MaxLength="50" />
+          <Property Name="YearLevelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_CeitStudents_CeitCourse">
+          <End Role="CeitCourse" Type="Self.CeitCourse" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitCourse">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitStudents_CeitSecurityQuestions">
+          <End Role="CeitSecurityQuestions" Type="Self.CeitSecurityQuestions" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitSecurityQuestions">
+              <PropertyRef Name="QuestionsId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitStudents_CeitYearLevel">
+          <End Role="CeitYearLevel" Type="Self.CeitYearLevel" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitYearLevel">
+              <PropertyRef Name="YearLevelId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="YearLevelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitUsers_CeitAdministrators">
+          <End Role="CeitAdministrators" Type="Self.CeitAdministrators" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitAdministrators">
+              <PropertyRef Name="AdminId" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="AdminAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitUsers_CeitStudents">
+          <End Role="CeitStudents" Type="Self.CeitStudents" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitStudents">
+              <PropertyRef Name="StudentID" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="StudentAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitUsers_CeitUserRoles">
+          <End Role="CeitUserRoles" Type="Self.CeitUserRoles" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUsers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="Roles" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ceit_gwa_databaseModel1StoreContainer">
+          <EntitySet Name="CeitAdministrators" EntityType="Self.CeitAdministrators" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitCourse" EntityType="Self.CeitCourse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitSecurityQuestions" EntityType="Self.CeitSecurityQuestions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitStudents" EntityType="Self.CeitStudents" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitUserRoles" EntityType="Self.CeitUserRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitUsers" EntityType="Self.CeitUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CeitYearLevel" EntityType="Self.CeitYearLevel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CeitStudents_CeitCourse" Association="Self.FK_CeitStudents_CeitCourse">
+            <End Role="CeitCourse" EntitySet="CeitCourse" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitStudents_CeitSecurityQuestions" Association="Self.FK_CeitStudents_CeitSecurityQuestions">
+            <End Role="CeitSecurityQuestions" EntitySet="CeitSecurityQuestions" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitStudents_CeitYearLevel" Association="Self.FK_CeitStudents_CeitYearLevel">
+            <End Role="CeitYearLevel" EntitySet="CeitYearLevel" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitUsers_CeitAdministrators" Association="Self.FK_CeitUsers_CeitAdministrators">
+            <End Role="CeitAdministrators" EntitySet="CeitAdministrators" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitUsers_CeitStudents" Association="Self.FK_CeitUsers_CeitStudents">
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitUsers_CeitUserRoles" Association="Self.FK_CeitUsers_CeitUserRoles">
+            <End Role="CeitUserRoles" EntitySet="CeitUserRoles" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ceit_gwa_databaseModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CeitAdministrator">
+          <Key>
+            <PropertyRef Name="AdminId" />
+          </Key>
+          <Property Name="AdminId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AdminName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CeitUsers" Relationship="Self.FK_CeitUsers_CeitAdministrators" FromRole="CeitAdministrators" ToRole="CeitUsers" />
+        </EntityType>
+        <EntityType Name="CeitCourse">
+          <Key>
+            <PropertyRef Name="CourseId" />
+          </Key>
+          <Property Name="CourseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CeitStudents" Relationship="Self.FK_CeitStudents_CeitCourse" FromRole="CeitCourse" ToRole="CeitStudents" />
+        </EntityType>
+        <EntityType Name="CeitSecurityQuestion">
+          <Key>
+            <PropertyRef Name="QuestionsId" />
+          </Key>
+          <Property Name="SecurityQuestions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="QuestionsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="CeitStudents" Relationship="Self.FK_CeitStudents_CeitSecurityQuestions" FromRole="CeitSecurityQuestions" ToRole="CeitStudents" />
+        </EntityType>
+        <EntityType Name="CeitStudent">
+          <Key>
+            <PropertyRef Name="StudentID" />
+          </Key>
+          <Property Name="StudentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StudentNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CourseId" Type="Int32" />
+          <Property Name="YearLevelId" Type="Int32" />
+          <Property Name="QuestionId" Type="Int32" />
+          <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CeitCourse" Relationship="Self.FK_CeitStudents_CeitCourse" FromRole="CeitStudents" ToRole="CeitCourse" />
+          <NavigationProperty Name="CeitSecurityQuestion" Relationship="Self.FK_CeitStudents_CeitSecurityQuestions" FromRole="CeitStudents" ToRole="CeitSecurityQuestions" />
+          <NavigationProperty Name="CeitYearLevel" Relationship="Self.FK_CeitStudents_CeitYearLevel" FromRole="CeitStudents" ToRole="CeitYearLevel" />
+          <NavigationProperty Name="CeitUsers" Relationship="Self.FK_CeitUsers_CeitStudents" FromRole="CeitStudents" ToRole="CeitUsers" />
+        </EntityType>
+        <EntityType Name="CeitUserRole">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Roles" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RolesFor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CeitUsers" Relationship="Self.FK_CeitUsers_CeitUserRoles" FromRole="CeitUserRoles" ToRole="CeitUsers" />
+        </EntityType>
+        <EntityType Name="CeitUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Roles" Type="Int32" />
+          <Property Name="DateCreated" Type="DateTime" Precision="3" />
+          <Property Name="DateUpdated" Type="DateTime" Precision="3" />
+          <Property Name="LoginAccount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdminAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CeitAdministrator" Relationship="Self.FK_CeitUsers_CeitAdministrators" FromRole="CeitUsers" ToRole="CeitAdministrators" />
+          <NavigationProperty Name="CeitStudent" Relationship="Self.FK_CeitUsers_CeitStudents" FromRole="CeitUsers" ToRole="CeitStudents" />
+          <NavigationProperty Name="CeitUserRole" Relationship="Self.FK_CeitUsers_CeitUserRoles" FromRole="CeitUsers" ToRole="CeitUserRoles" />
+        </EntityType>
+        <EntityType Name="CeitYearLevel">
+          <Key>
+            <PropertyRef Name="YearLevelId" />
+          </Key>
+          <Property Name="YearLevel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="YearLevelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="CeitStudents" Relationship="Self.FK_CeitStudents_CeitYearLevel" FromRole="CeitYearLevel" ToRole="CeitStudents" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_CeitUsers_CeitAdministrators">
+          <End Role="CeitAdministrators" Type="Self.CeitAdministrator" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitAdministrators">
+              <PropertyRef Name="AdminId" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="AdminAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitStudents_CeitCourse">
+          <End Role="CeitCourse" Type="Self.CeitCourse" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitCourse">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitStudents_CeitSecurityQuestions">
+          <End Role="CeitSecurityQuestions" Type="Self.CeitSecurityQuestion" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitSecurityQuestions">
+              <PropertyRef Name="QuestionsId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="QuestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitStudents_CeitYearLevel">
+          <End Role="CeitYearLevel" Type="Self.CeitYearLevel" Multiplicity="0..1" />
+          <End Role="CeitStudents" Type="Self.CeitStudent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitYearLevel">
+              <PropertyRef Name="YearLevelId" />
+            </Principal>
+            <Dependent Role="CeitStudents">
+              <PropertyRef Name="YearLevelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitUsers_CeitStudents">
+          <End Role="CeitStudents" Type="Self.CeitStudent" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitStudents">
+              <PropertyRef Name="StudentID" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="StudentAccount" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CeitUsers_CeitUserRoles">
+          <End Role="CeitUserRoles" Type="Self.CeitUserRole" Multiplicity="0..1" />
+          <End Role="CeitUsers" Type="Self.CeitUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CeitUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="CeitUsers">
+              <PropertyRef Name="Roles" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ceit_gwa_databaseEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CeitAdministrators" EntityType="Self.CeitAdministrator" />
+          <EntitySet Name="CeitCourses" EntityType="Self.CeitCourse" />
+          <EntitySet Name="CeitSecurityQuestions" EntityType="Self.CeitSecurityQuestion" />
+          <EntitySet Name="CeitStudents" EntityType="Self.CeitStudent" />
+          <EntitySet Name="CeitUserRoles" EntityType="Self.CeitUserRole" />
+          <EntitySet Name="CeitUsers" EntityType="Self.CeitUser" />
+          <EntitySet Name="CeitYearLevels" EntityType="Self.CeitYearLevel" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <AssociationSet Name="FK_CeitUsers_CeitAdministrators" Association="Self.FK_CeitUsers_CeitAdministrators">
+            <End Role="CeitAdministrators" EntitySet="CeitAdministrators" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitStudents_CeitCourse" Association="Self.FK_CeitStudents_CeitCourse">
+            <End Role="CeitCourse" EntitySet="CeitCourses" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitStudents_CeitSecurityQuestions" Association="Self.FK_CeitStudents_CeitSecurityQuestions">
+            <End Role="CeitSecurityQuestions" EntitySet="CeitSecurityQuestions" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitStudents_CeitYearLevel" Association="Self.FK_CeitStudents_CeitYearLevel">
+            <End Role="CeitYearLevel" EntitySet="CeitYearLevels" />
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitUsers_CeitStudents" Association="Self.FK_CeitUsers_CeitStudents">
+            <End Role="CeitStudents" EntitySet="CeitStudents" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CeitUsers_CeitUserRoles" Association="Self.FK_CeitUsers_CeitUserRoles">
+            <End Role="CeitUserRoles" EntitySet="CeitUserRoles" />
+            <End Role="CeitUsers" EntitySet="CeitUsers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ceit_gwa_databaseModel1StoreContainer" CdmEntityContainer="ceit_gwa_databaseEntities1">
+          <EntitySetMapping Name="CeitAdministrators">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitAdministrator">
+              <MappingFragment StoreEntitySet="CeitAdministrators">
+                <ScalarProperty Name="AdminId" ColumnName="AdminId" />
+                <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitCourses">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitCourse">
+              <MappingFragment StoreEntitySet="CeitCourse">
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitSecurityQuestions">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitSecurityQuestion">
+              <MappingFragment StoreEntitySet="CeitSecurityQuestions">
+                <ScalarProperty Name="SecurityQuestions" ColumnName="SecurityQuestions" />
+                <ScalarProperty Name="QuestionsId" ColumnName="QuestionsId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitStudents">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitStudent">
+              <MappingFragment StoreEntitySet="CeitStudents">
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="StudentNumber" ColumnName="StudentNumber" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="YearLevelId" ColumnName="YearLevelId" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitUserRoles">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitUserRole">
+              <MappingFragment StoreEntitySet="CeitUserRoles">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Roles" ColumnName="Roles" />
+                <ScalarProperty Name="RolesFor" ColumnName="RolesFor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitUsers">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitUser">
+              <MappingFragment StoreEntitySet="CeitUsers">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="StudentAccount" ColumnName="StudentAccount" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Roles" ColumnName="Roles" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="DateUpdated" ColumnName="DateUpdated" />
+                <ScalarProperty Name="LoginAccount" ColumnName="LoginAccount" />
+                <ScalarProperty Name="AdminAccount" ColumnName="AdminAccount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CeitYearLevels">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.CeitYearLevel">
+              <MappingFragment StoreEntitySet="CeitYearLevel">
+                <ScalarProperty Name="YearLevel" ColumnName="YearLevel" />
+                <ScalarProperty Name="YearLevelId" ColumnName="YearLevelId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="ceit_gwa_databaseModel1.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

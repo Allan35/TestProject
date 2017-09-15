@@ -1,0 +1,1349 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.ApplicationServices.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute">
+            <summary>Shim type of System.Web.Hosting.CustomLoaderAttribute</summary>
+        </member>
+        <member name="M:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.#ctor(System.Web.Hosting.CustomLoaderAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.AllInstances.CustomLoaderTypeGet">
+            <summary>Sets the shim of CustomLoaderAttribute.get_CustomLoaderType()</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.AllInstances.CustomLoaderTypeSetType">
+            <summary>Sets the shim of CustomLoaderAttribute.set_CustomLoaderType(Type value)</summary>
+        </member>
+        <member name="M:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.ConstructorType">
+            <summary>Sets the shim of CustomLoaderAttribute.CustomLoaderAttribute(Type customLoaderType)</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.CustomLoaderTypeGet">
+            <summary>Sets the shim of CustomLoaderAttribute.get_CustomLoaderType()</summary>
+        </member>
+        <member name="P:System.Web.Hosting.Fakes.ShimCustomLoaderAttribute.CustomLoaderTypeSetType">
+            <summary>Sets the shim of CustomLoaderAttribute.set_CustomLoaderType(Type value)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipCreateUserException">
+            <summary>Shim type of System.Web.Security.MembershipCreateUserException</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipCreateUserException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipCreateUserException.#ctor(System.Web.Security.MembershipCreateUserException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipCreateUserException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of MembershipCreateUserException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.AllInstances.StatusCodeGet">
+            <summary>Sets the shim of MembershipCreateUserException.get_StatusCode()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipCreateUserException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipCreateUserException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipCreateUserException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.Constructor">
+            <summary>Sets the shim of MembershipCreateUserException.MembershipCreateUserException()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.ConstructorMembershipCreateStatus">
+            <summary>Sets the shim of MembershipCreateUserException.MembershipCreateUserException(MembershipCreateStatus statusCode)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of MembershipCreateUserException.MembershipCreateUserException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.ConstructorString">
+            <summary>Sets the shim of MembershipCreateUserException.MembershipCreateUserException(String message)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.ConstructorStringException">
+            <summary>Sets the shim of MembershipCreateUserException.MembershipCreateUserException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.GetMessageFromStatusCodeMembershipCreateStatus">
+            <summary>Sets the shim of MembershipCreateUserException.GetMessageFromStatusCode(MembershipCreateStatus statusCode)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of MembershipCreateUserException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipCreateUserException.StatusCodeGet">
+            <summary>Sets the shim of MembershipCreateUserException.get_StatusCode()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipPasswordException">
+            <summary>Shim type of System.Web.Security.MembershipPasswordException</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipPasswordException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipPasswordException.#ctor(System.Web.Security.MembershipPasswordException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipPasswordException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipPasswordException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipPasswordException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipPasswordException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipPasswordException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipPasswordException.Constructor">
+            <summary>Sets the shim of MembershipPasswordException.MembershipPasswordException()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipPasswordException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of MembershipPasswordException.MembershipPasswordException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipPasswordException.ConstructorString">
+            <summary>Sets the shim of MembershipPasswordException.MembershipPasswordException(String message)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipPasswordException.ConstructorStringException">
+            <summary>Sets the shim of MembershipPasswordException.MembershipPasswordException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipProvider">
+            <summary>Shim type of System.Web.Security.MembershipProvider</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProvider.#ctor(System.Web.Security.MembershipProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.DecryptPasswordByteArray">
+            <summary>Sets the shim of MembershipProvider.DecryptPassword(Byte[] encodedPassword)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.EncryptPasswordByteArray">
+            <summary>Sets the shim of MembershipProvider.EncryptPassword(Byte[] password)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.EncryptPasswordByteArrayMembershipPasswordCompatibilityMode">
+            <summary>Sets the shim of MembershipProvider.EncryptPassword(Byte[] password, MembershipPasswordCompatibilityMode legacyPasswordCompatibilityMode)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.GetUserStringBooleanBoolean">
+            <summary>Sets the shim of MembershipProvider.GetUser(String username, Boolean userIsOnline, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.OnValidatingPasswordValidatePasswordEventArgs">
+            <summary>Sets the shim of MembershipProvider.OnValidatingPassword(ValidatePasswordEventArgs e)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.ValidatingPasswordAddMembershipValidatePasswordEventHandler">
+            <summary>Sets the shim of MembershipProvider.add_ValidatingPassword(MembershipValidatePasswordEventHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.AllInstances.ValidatingPasswordRemoveMembershipValidatePasswordEventHandler">
+            <summary>Sets the shim of MembershipProvider.remove_ValidatingPassword(MembershipValidatePasswordEventHandler value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.Constructor">
+            <summary>Sets the shim of MembershipProvider.MembershipProvider()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.DecryptPasswordByteArray">
+            <summary>Sets the shim of MembershipProvider.DecryptPassword(Byte[] encodedPassword)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.EncryptPasswordByteArray">
+            <summary>Sets the shim of MembershipProvider.EncryptPassword(Byte[] password)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.EncryptPasswordByteArrayMembershipPasswordCompatibilityMode">
+            <summary>Sets the shim of MembershipProvider.EncryptPassword(Byte[] password, MembershipPasswordCompatibilityMode legacyPasswordCompatibilityMode)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.GetUserStringBooleanBoolean">
+            <summary>Sets the shim of MembershipProvider.GetUser(String username, Boolean userIsOnline, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.OnValidatingPasswordValidatePasswordEventArgs">
+            <summary>Sets the shim of MembershipProvider.OnValidatingPassword(ValidatePasswordEventArgs e)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.ValidatingPasswordAddMembershipValidatePasswordEventHandler">
+            <summary>Sets the shim of MembershipProvider.add_ValidatingPassword(MembershipValidatePasswordEventHandler value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProvider.ValidatingPasswordRemoveMembershipValidatePasswordEventHandler">
+            <summary>Sets the shim of MembershipProvider.remove_ValidatingPassword(MembershipValidatePasswordEventHandler value)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipProviderCollection">
+            <summary>Shim type of System.Web.Security.MembershipProviderCollection</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.#ctor(System.Web.Security.MembershipProviderCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.AddProviderBase">
+            <summary>Sets the shim of MembershipProviderCollection.Add(ProviderBase provider)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipProviderCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.AllInstances.AddProviderBase">
+            <summary>Sets the shim of MembershipProviderCollection.Add(ProviderBase provider)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.AllInstances.CopyToMembershipProviderArrayInt32">
+            <summary>Sets the shim of MembershipProviderCollection.CopyTo(MembershipProvider[] array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.AllInstances.ItemGetString">
+            <summary>Sets the shim of MembershipProviderCollection.get_Item(String name)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipProviderCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.Constructor">
+            <summary>Sets the shim of MembershipProviderCollection.MembershipProviderCollection()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.CopyToMembershipProviderArrayInt32">
+            <summary>Sets the shim of MembershipProviderCollection.CopyTo(MembershipProvider[] array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipProviderCollection.ItemGetString">
+            <summary>Sets the shim of MembershipProviderCollection.get_Item(String name)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipUser">
+            <summary>Shim type of System.Web.Security.MembershipUser</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUser.#ctor(System.Web.Security.MembershipUser)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ChangePasswordQuestionAndAnswerStringStringString">
+            <summary>Sets the shim of MembershipUser.ChangePasswordQuestionAndAnswer(String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ChangePasswordStringString">
+            <summary>Sets the shim of MembershipUser.ChangePassword(String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ChangePasswordStringStringBoolean">
+            <summary>Sets the shim of MembershipUser.ChangePassword(String oldPassword, String newPassword, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.CommentGet">
+            <summary>Sets the shim of MembershipUser.get_Comment()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.CommentSetString">
+            <summary>Sets the shim of MembershipUser.set_Comment(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.CreationDateGet">
+            <summary>Sets the shim of MembershipUser.get_CreationDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.EmailGet">
+            <summary>Sets the shim of MembershipUser.get_Email()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.EmailSetString">
+            <summary>Sets the shim of MembershipUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.GetPassword">
+            <summary>Sets the shim of MembershipUser.GetPassword()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.GetPasswordBoolean">
+            <summary>Sets the shim of MembershipUser.GetPassword(Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.GetPasswordString">
+            <summary>Sets the shim of MembershipUser.GetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.GetPasswordStringBoolean">
+            <summary>Sets the shim of MembershipUser.GetPassword(String answer, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.IsApprovedGet">
+            <summary>Sets the shim of MembershipUser.get_IsApproved()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.IsApprovedSetBoolean">
+            <summary>Sets the shim of MembershipUser.set_IsApproved(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.IsLockedOutGet">
+            <summary>Sets the shim of MembershipUser.get_IsLockedOut()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.IsOnlineGet">
+            <summary>Sets the shim of MembershipUser.get_IsOnline()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastActivityDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastActivityDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastActivityDateSetDateTime">
+            <summary>Sets the shim of MembershipUser.set_LastActivityDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastLockoutDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastLockoutDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastLoginDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastLoginDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastLoginDateSetDateTime">
+            <summary>Sets the shim of MembershipUser.set_LastLoginDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.LastPasswordChangedDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastPasswordChangedDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.PasswordQuestionGet">
+            <summary>Sets the shim of MembershipUser.get_PasswordQuestion()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ProviderNameGet">
+            <summary>Sets the shim of MembershipUser.get_ProviderName()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ProviderUserKeyGet">
+            <summary>Sets the shim of MembershipUser.get_ProviderUserKey()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ResetPassword">
+            <summary>Sets the shim of MembershipUser.ResetPassword()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ResetPasswordBoolean">
+            <summary>Sets the shim of MembershipUser.ResetPassword(Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ResetPasswordString">
+            <summary>Sets the shim of MembershipUser.ResetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ResetPasswordStringBoolean">
+            <summary>Sets the shim of MembershipUser.ResetPassword(String passwordAnswer, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.ToString01">
+            <summary>Sets the shim of MembershipUser.ToString()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.UnlockUser">
+            <summary>Sets the shim of MembershipUser.UnlockUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.Update">
+            <summary>Sets the shim of MembershipUser.Update()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.AllInstances.UserNameGet">
+            <summary>Sets the shim of MembershipUser.get_UserName()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ChangePasswordQuestionAndAnswerStringStringString">
+            <summary>Sets the shim of MembershipUser.ChangePasswordQuestionAndAnswer(String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ChangePasswordStringString">
+            <summary>Sets the shim of MembershipUser.ChangePassword(String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ChangePasswordStringStringBoolean">
+            <summary>Sets the shim of MembershipUser.ChangePassword(String oldPassword, String newPassword, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.CommentGet">
+            <summary>Sets the shim of MembershipUser.get_Comment()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.CommentSetString">
+            <summary>Sets the shim of MembershipUser.set_Comment(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.Constructor">
+            <summary>Sets the shim of MembershipUser.MembershipUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ConstructorStringStringObjectStringStringStringBooleanBooleanDateTimeDateTimeDateTimeDateTimeDateTime">
+            <summary>Sets the shim of MembershipUser.MembershipUser(String providerName, String name, Object providerUserKey, String email, String passwordQuestion, String comment, Boolean isApproved, Boolean isLockedOut, DateTime creationDate, DateTime lastLoginDate, DateTime lastActivityDate, DateTime lastPasswordChangedDate, DateTime lastLockoutDate)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.CreationDateGet">
+            <summary>Sets the shim of MembershipUser.get_CreationDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.EmailGet">
+            <summary>Sets the shim of MembershipUser.get_Email()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.EmailSetString">
+            <summary>Sets the shim of MembershipUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.GetPassword">
+            <summary>Sets the shim of MembershipUser.GetPassword()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.GetPasswordBoolean">
+            <summary>Sets the shim of MembershipUser.GetPassword(Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.GetPasswordString">
+            <summary>Sets the shim of MembershipUser.GetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.GetPasswordStringBoolean">
+            <summary>Sets the shim of MembershipUser.GetPassword(String answer, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.IsApprovedGet">
+            <summary>Sets the shim of MembershipUser.get_IsApproved()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.IsApprovedSetBoolean">
+            <summary>Sets the shim of MembershipUser.set_IsApproved(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.IsLockedOutGet">
+            <summary>Sets the shim of MembershipUser.get_IsLockedOut()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.IsOnlineGet">
+            <summary>Sets the shim of MembershipUser.get_IsOnline()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastActivityDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastActivityDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastActivityDateSetDateTime">
+            <summary>Sets the shim of MembershipUser.set_LastActivityDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastLockoutDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastLockoutDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastLoginDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastLoginDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastLoginDateSetDateTime">
+            <summary>Sets the shim of MembershipUser.set_LastLoginDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.LastPasswordChangedDateGet">
+            <summary>Sets the shim of MembershipUser.get_LastPasswordChangedDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.PasswordQuestionGet">
+            <summary>Sets the shim of MembershipUser.get_PasswordQuestion()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ProviderNameGet">
+            <summary>Sets the shim of MembershipUser.get_ProviderName()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ProviderUserKeyGet">
+            <summary>Sets the shim of MembershipUser.get_ProviderUserKey()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ResetPassword">
+            <summary>Sets the shim of MembershipUser.ResetPassword()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ResetPasswordBoolean">
+            <summary>Sets the shim of MembershipUser.ResetPassword(Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ResetPasswordString">
+            <summary>Sets the shim of MembershipUser.ResetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ResetPasswordStringBoolean">
+            <summary>Sets the shim of MembershipUser.ResetPassword(String passwordAnswer, Boolean throwOnError)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.ToString">
+            <summary>Sets the shim of MembershipUser.ToString()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.UnlockUser">
+            <summary>Sets the shim of MembershipUser.UnlockUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.Update">
+            <summary>Sets the shim of MembershipUser.Update()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUser.UserNameGet">
+            <summary>Sets the shim of MembershipUser.get_UserName()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipUserCollection">
+            <summary>Shim type of System.Web.Security.MembershipUserCollection</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.#ctor(System.Web.Security.MembershipUserCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AddMembershipUser">
+            <summary>Sets the shim of MembershipUserCollection.Add(MembershipUser user)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.AddMembershipUser">
+            <summary>Sets the shim of MembershipUserCollection.Add(MembershipUser user)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.Clear">
+            <summary>Sets the shim of MembershipUserCollection.Clear()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.CopyToMembershipUserArrayInt32">
+            <summary>Sets the shim of MembershipUserCollection.CopyTo(MembershipUser[] array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.CountGet">
+            <summary>Sets the shim of MembershipUserCollection.get_Count()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MembershipUserCollection.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.IsSynchronizedGet">
+            <summary>Sets the shim of MembershipUserCollection.get_IsSynchronized()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.ItemGetString">
+            <summary>Sets the shim of MembershipUserCollection.get_Item(String name)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.RemoveString">
+            <summary>Sets the shim of MembershipUserCollection.Remove(String name)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.SetReadOnly">
+            <summary>Sets the shim of MembershipUserCollection.SetReadOnly()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.SyncRootGet">
+            <summary>Sets the shim of MembershipUserCollection.get_SyncRoot()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.AllInstances.SystemCollectionsICollectionCopyToArrayInt32">
+            <summary>Sets the shim of MembershipUserCollection.System.Collections.ICollection.CopyTo(Array array, Int32 index)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimMembershipUserCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.Clear">
+            <summary>Sets the shim of MembershipUserCollection.Clear()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.Constructor">
+            <summary>Sets the shim of MembershipUserCollection.MembershipUserCollection()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.CopyToMembershipUserArrayInt32">
+            <summary>Sets the shim of MembershipUserCollection.CopyTo(MembershipUser[] array, Int32 index)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.CountGet">
+            <summary>Sets the shim of MembershipUserCollection.get_Count()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.GetEnumerator">
+            <summary>Sets the shim of MembershipUserCollection.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.IsSynchronizedGet">
+            <summary>Sets the shim of MembershipUserCollection.get_IsSynchronized()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.ItemGetString">
+            <summary>Sets the shim of MembershipUserCollection.get_Item(String name)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.RemoveString">
+            <summary>Sets the shim of MembershipUserCollection.Remove(String name)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.SetReadOnly">
+            <summary>Sets the shim of MembershipUserCollection.SetReadOnly()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.SyncRootGet">
+            <summary>Sets the shim of MembershipUserCollection.get_SyncRoot()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimMembershipUserCollection.SystemCollectionsICollectionCopyToArrayInt32">
+            <summary>Sets the shim of MembershipUserCollection.System.Collections.ICollection.CopyTo(Array array, Int32 index)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimRoleProvider">
+            <summary>Shim type of System.Web.Security.RoleProvider</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimRoleProvider.#ctor(System.Web.Security.RoleProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimRoleProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimRoleProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimRoleProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimRoleProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimRoleProvider.Constructor">
+            <summary>Sets the shim of RoleProvider.RoleProvider()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimValidatePasswordEventArgs">
+            <summary>Shim type of System.Web.Security.ValidatePasswordEventArgs</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.#ctor(System.Web.Security.ValidatePasswordEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.CancelGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_Cancel()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.CancelSetBoolean">
+            <summary>Sets the shim of ValidatePasswordEventArgs.set_Cancel(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.FailureInformationGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_FailureInformation()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.FailureInformationSetException">
+            <summary>Sets the shim of ValidatePasswordEventArgs.set_FailureInformation(Exception value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.IsNewUserGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_IsNewUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.PasswordGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_Password()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.AllInstances.UserNameGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_UserName()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.CancelGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_Cancel()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.CancelSetBoolean">
+            <summary>Sets the shim of ValidatePasswordEventArgs.set_Cancel(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.ConstructorStringStringBoolean">
+            <summary>Sets the shim of ValidatePasswordEventArgs.ValidatePasswordEventArgs(String userName, String password, Boolean isNewUser)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.FailureInformationGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_FailureInformation()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.FailureInformationSetException">
+            <summary>Sets the shim of ValidatePasswordEventArgs.set_FailureInformation(Exception value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.IsNewUserGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_IsNewUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.PasswordGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_Password()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.ShimValidatePasswordEventArgs.UserNameGet">
+            <summary>Sets the shim of ValidatePasswordEventArgs.get_UserName()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.StubMembershipCreateUserException">
+            <summary>Stub type of System.Web.Security.MembershipCreateUserException</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.#ctor(System.Web.Security.MembershipCreateStatus)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubMembershipCreateUserException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubMembershipCreateUserException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of MembershipCreateUserException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of MembershipCreateUserException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.InitializeStub">
+            <summary>Initializes a new instance of type StubMembershipCreateUserException</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipCreateUserException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipCreateUserException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipCreateUserException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.StubMembershipPasswordException">
+            <summary>Stub type of System.Web.Security.MembershipPasswordException</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubMembershipPasswordException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubMembershipPasswordException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.InitializeStub">
+            <summary>Initializes a new instance of type StubMembershipPasswordException</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipPasswordException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipPasswordException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipPasswordException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.StubMembershipProvider">
+            <summary>Stub type of System.Web.Security.MembershipProvider</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.ApplicationName">
+            <summary>Sets the stub of MembershipProvider.get_ApplicationName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ApplicationNameGet">
+            <summary>Sets the stub of MembershipProvider.get_ApplicationName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ApplicationNameSetString">
+            <summary>Sets the stub of MembershipProvider.set_ApplicationName(String value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.AttachBackingFieldToApplicationName">
+            <summary>Attaches delegates to emulate StubMembershipProvider.ApplicationName as a property with a backing field.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+            <summary>Sets the stub of MembershipProvider.ChangePassword(String username, String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+            <summary>Sets the stub of MembershipProvider.ChangePasswordQuestionAndAnswer(String username, String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ChangePasswordQuestionAndAnswerStringStringStringString">
+            <summary>Sets the stub of MembershipProvider.ChangePasswordQuestionAndAnswer(String username, String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ChangePasswordStringStringString">
+            <summary>Sets the stub of MembershipProvider.ChangePassword(String username, String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+            <summary>Sets the stub of MembershipProvider.CreateUser(String username, String password, String email, String passwordQuestion, String passwordAnswer, Boolean isApproved, Object providerUserKey, MembershipCreateStatus&amp; status)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.CreateUserStringStringStringStringStringBooleanObjectMembershipCreateStatusOut">
+            <summary>Sets the stub of MembershipProvider.CreateUser(String username, String password, String email, String passwordQuestion, String passwordAnswer, Boolean isApproved, Object providerUserKey, MembershipCreateStatus&amp; status)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.DecryptPassword(System.Byte[])">
+            <summary>Sets the stub of MembershipProvider.DecryptPassword(Byte[] encodedPassword)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.DecryptPasswordByteArray">
+            <summary>Sets the stub of MembershipProvider.DecryptPassword(Byte[] encodedPassword)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.DeleteUser(System.String,System.Boolean)">
+            <summary>Sets the stub of MembershipProvider.DeleteUser(String username, Boolean deleteAllRelatedData)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.DeleteUserStringBoolean">
+            <summary>Sets the stub of MembershipProvider.DeleteUser(String username, Boolean deleteAllRelatedData)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.Description">
+            <summary>Sets the stub of ProviderBase.get_Description()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.DescriptionGet">
+            <summary>Sets the stub of ProviderBase.get_Description()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.EnablePasswordReset">
+            <summary>Sets the stub of MembershipProvider.get_EnablePasswordReset()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.EnablePasswordResetGet">
+            <summary>Sets the stub of MembershipProvider.get_EnablePasswordReset()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.EnablePasswordRetrieval">
+            <summary>Sets the stub of MembershipProvider.get_EnablePasswordRetrieval()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.EnablePasswordRetrievalGet">
+            <summary>Sets the stub of MembershipProvider.get_EnablePasswordRetrieval()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.EncryptPassword(System.Byte[])">
+            <summary>Sets the stub of MembershipProvider.EncryptPassword(Byte[] password)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.EncryptPassword(System.Byte[],System.Web.Configuration.MembershipPasswordCompatibilityMode)">
+            <summary>Sets the stub of MembershipProvider.EncryptPassword(Byte[] password, MembershipPasswordCompatibilityMode legacyPasswordCompatibilityMode)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.EncryptPasswordByteArray">
+            <summary>Sets the stub of MembershipProvider.EncryptPassword(Byte[] password)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.EncryptPasswordByteArrayMembershipPasswordCompatibilityMode">
+            <summary>Sets the stub of MembershipProvider.EncryptPassword(Byte[] password, MembershipPasswordCompatibilityMode legacyPasswordCompatibilityMode)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>Sets the stub of MembershipProvider.FindUsersByEmail(String emailToMatch, Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.FindUsersByEmailStringInt32Int32Int32Out">
+            <summary>Sets the stub of MembershipProvider.FindUsersByEmail(String emailToMatch, Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>Sets the stub of MembershipProvider.FindUsersByName(String usernameToMatch, Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.FindUsersByNameStringInt32Int32Int32Out">
+            <summary>Sets the stub of MembershipProvider.FindUsersByName(String usernameToMatch, Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+            <summary>Sets the stub of MembershipProvider.GetAllUsers(Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetAllUsersInt32Int32Int32Out">
+            <summary>Sets the stub of MembershipProvider.GetAllUsers(Int32 pageIndex, Int32 pageSize, Int32&amp; totalRecords)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetNumberOfUsersOnline">
+            <summary>Sets the stub of MembershipProvider.GetNumberOfUsersOnline()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetNumberOfUsersOnline01">
+            <summary>Sets the stub of MembershipProvider.GetNumberOfUsersOnline()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetPassword(System.String,System.String)">
+            <summary>Sets the stub of MembershipProvider.GetPassword(String username, String answer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetPasswordStringString">
+            <summary>Sets the stub of MembershipProvider.GetPassword(String username, String answer)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetUser(System.Object,System.Boolean)">
+            <summary>Sets the stub of MembershipProvider.GetUser(Object providerUserKey, Boolean userIsOnline)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetUser(System.String,System.Boolean)">
+            <summary>Sets the stub of MembershipProvider.GetUser(String username, Boolean userIsOnline)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.GetUserNameByEmail(System.String)">
+            <summary>Sets the stub of MembershipProvider.GetUserNameByEmail(String email)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetUserNameByEmailString">
+            <summary>Sets the stub of MembershipProvider.GetUserNameByEmail(String email)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetUserObjectBoolean">
+            <summary>Sets the stub of MembershipProvider.GetUser(Object providerUserKey, Boolean userIsOnline)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.GetUserStringBoolean">
+            <summary>Sets the stub of MembershipProvider.GetUser(String username, Boolean userIsOnline)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>Sets the stub of ProviderBase.Initialize(String name, NameValueCollection config)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.InitializeStringNameValueCollection">
+            <summary>Sets the stub of ProviderBase.Initialize(String name, NameValueCollection config)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubMembershipProvider</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.MaxInvalidPasswordAttempts">
+            <summary>Sets the stub of MembershipProvider.get_MaxInvalidPasswordAttempts()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.MaxInvalidPasswordAttemptsGet">
+            <summary>Sets the stub of MembershipProvider.get_MaxInvalidPasswordAttempts()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.MinRequiredNonAlphanumericCharacters">
+            <summary>Sets the stub of MembershipProvider.get_MinRequiredNonAlphanumericCharacters()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.MinRequiredNonAlphanumericCharactersGet">
+            <summary>Sets the stub of MembershipProvider.get_MinRequiredNonAlphanumericCharacters()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.MinRequiredPasswordLength">
+            <summary>Sets the stub of MembershipProvider.get_MinRequiredPasswordLength()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.MinRequiredPasswordLengthGet">
+            <summary>Sets the stub of MembershipProvider.get_MinRequiredPasswordLength()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.Name">
+            <summary>Sets the stub of ProviderBase.get_Name()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.NameGet">
+            <summary>Sets the stub of ProviderBase.get_Name()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.OnValidatingPassword(System.Web.Security.ValidatePasswordEventArgs)">
+            <summary>Sets the stub of MembershipProvider.OnValidatingPassword(ValidatePasswordEventArgs e)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.OnValidatingPasswordValidatePasswordEventArgs">
+            <summary>Sets the stub of MembershipProvider.OnValidatingPassword(ValidatePasswordEventArgs e)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.PasswordAttemptWindow">
+            <summary>Sets the stub of MembershipProvider.get_PasswordAttemptWindow()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.PasswordAttemptWindowGet">
+            <summary>Sets the stub of MembershipProvider.get_PasswordAttemptWindow()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.PasswordFormat">
+            <summary>Sets the stub of MembershipProvider.get_PasswordFormat()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.PasswordFormatGet">
+            <summary>Sets the stub of MembershipProvider.get_PasswordFormat()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.PasswordStrengthRegularExpression">
+            <summary>Sets the stub of MembershipProvider.get_PasswordStrengthRegularExpression()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.PasswordStrengthRegularExpressionGet">
+            <summary>Sets the stub of MembershipProvider.get_PasswordStrengthRegularExpression()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.RequiresQuestionAndAnswer">
+            <summary>Sets the stub of MembershipProvider.get_RequiresQuestionAndAnswer()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.RequiresQuestionAndAnswerGet">
+            <summary>Sets the stub of MembershipProvider.get_RequiresQuestionAndAnswer()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipProvider.RequiresUniqueEmail">
+            <summary>Sets the stub of MembershipProvider.get_RequiresUniqueEmail()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.RequiresUniqueEmailGet">
+            <summary>Sets the stub of MembershipProvider.get_RequiresUniqueEmail()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.ResetPassword(System.String,System.String)">
+            <summary>Sets the stub of MembershipProvider.ResetPassword(String username, String answer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ResetPasswordStringString">
+            <summary>Sets the stub of MembershipProvider.ResetPassword(String username, String answer)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.UnlockUser(System.String)">
+            <summary>Sets the stub of MembershipProvider.UnlockUser(String userName)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.UnlockUserString">
+            <summary>Sets the stub of MembershipProvider.UnlockUser(String userName)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+            <summary>Sets the stub of MembershipProvider.UpdateUser(MembershipUser user)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.UpdateUserMembershipUser">
+            <summary>Sets the stub of MembershipProvider.UpdateUser(MembershipUser user)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipProvider.ValidateUser(System.String,System.String)">
+            <summary>Sets the stub of MembershipProvider.ValidateUser(String username, String password)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipProvider.ValidateUserStringString">
+            <summary>Sets the stub of MembershipProvider.ValidateUser(String username, String password)</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.StubMembershipUser">
+            <summary>Stub type of System.Web.Security.MembershipUser</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.#ctor(System.String,System.String,System.Object,System.String,System.String,System.String,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.AttachBackingFieldToComment">
+            <summary>Attaches delegates to emulate StubMembershipUser.Comment as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.AttachBackingFieldToEmail">
+            <summary>Attaches delegates to emulate StubMembershipUser.Email as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.AttachBackingFieldToIsApproved">
+            <summary>Attaches delegates to emulate StubMembershipUser.IsApproved as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.AttachBackingFieldToLastActivityDate">
+            <summary>Attaches delegates to emulate StubMembershipUser.LastActivityDate as a property with a backing field.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.AttachBackingFieldToLastLoginDate">
+            <summary>Attaches delegates to emulate StubMembershipUser.LastLoginDate as a property with a backing field.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.ChangePassword(System.String,System.String)">
+            <summary>Sets the stub of MembershipUser.ChangePassword(String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String)">
+            <summary>Sets the stub of MembershipUser.ChangePasswordQuestionAndAnswer(String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ChangePasswordQuestionAndAnswerStringStringString">
+            <summary>Sets the stub of MembershipUser.ChangePasswordQuestionAndAnswer(String password, String newPasswordQuestion, String newPasswordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ChangePasswordStringString">
+            <summary>Sets the stub of MembershipUser.ChangePassword(String oldPassword, String newPassword)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.Comment">
+            <summary>Sets the stub of MembershipUser.get_Comment()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.CommentGet">
+            <summary>Sets the stub of MembershipUser.get_Comment()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.CommentSetString">
+            <summary>Sets the stub of MembershipUser.set_Comment(String value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.CreationDate">
+            <summary>Sets the stub of MembershipUser.get_CreationDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.CreationDateGet">
+            <summary>Sets the stub of MembershipUser.get_CreationDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.Email">
+            <summary>Sets the stub of MembershipUser.get_Email()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.EmailGet">
+            <summary>Sets the stub of MembershipUser.get_Email()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.EmailSetString">
+            <summary>Sets the stub of MembershipUser.set_Email(String value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.GetPassword">
+            <summary>Sets the stub of MembershipUser.GetPassword()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.GetPassword(System.String)">
+            <summary>Sets the stub of MembershipUser.GetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.GetPassword01">
+            <summary>Sets the stub of MembershipUser.GetPassword()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.GetPasswordString">
+            <summary>Sets the stub of MembershipUser.GetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.InitializeStub">
+            <summary>Initializes a new instance of type StubMembershipUser</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.IsApproved">
+            <summary>Sets the stub of MembershipUser.get_IsApproved()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.IsApprovedGet">
+            <summary>Sets the stub of MembershipUser.get_IsApproved()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.IsApprovedSetBoolean">
+            <summary>Sets the stub of MembershipUser.set_IsApproved(Boolean value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.IsLockedOut">
+            <summary>Sets the stub of MembershipUser.get_IsLockedOut()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.IsLockedOutGet">
+            <summary>Sets the stub of MembershipUser.get_IsLockedOut()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.IsOnline">
+            <summary>Sets the stub of MembershipUser.get_IsOnline()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.IsOnlineGet">
+            <summary>Sets the stub of MembershipUser.get_IsOnline()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.LastActivityDate">
+            <summary>Sets the stub of MembershipUser.get_LastActivityDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastActivityDateGet">
+            <summary>Sets the stub of MembershipUser.get_LastActivityDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastActivityDateSetDateTime">
+            <summary>Sets the stub of MembershipUser.set_LastActivityDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.LastLockoutDate">
+            <summary>Sets the stub of MembershipUser.get_LastLockoutDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastLockoutDateGet">
+            <summary>Sets the stub of MembershipUser.get_LastLockoutDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.LastLoginDate">
+            <summary>Sets the stub of MembershipUser.get_LastLoginDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastLoginDateGet">
+            <summary>Sets the stub of MembershipUser.get_LastLoginDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastLoginDateSetDateTime">
+            <summary>Sets the stub of MembershipUser.set_LastLoginDate(DateTime value)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.LastPasswordChangedDate">
+            <summary>Sets the stub of MembershipUser.get_LastPasswordChangedDate()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.LastPasswordChangedDateGet">
+            <summary>Sets the stub of MembershipUser.get_LastPasswordChangedDate()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.PasswordQuestion">
+            <summary>Sets the stub of MembershipUser.get_PasswordQuestion()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.PasswordQuestionGet">
+            <summary>Sets the stub of MembershipUser.get_PasswordQuestion()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.ProviderName">
+            <summary>Sets the stub of MembershipUser.get_ProviderName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ProviderNameGet">
+            <summary>Sets the stub of MembershipUser.get_ProviderName()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.ProviderUserKey">
+            <summary>Sets the stub of MembershipUser.get_ProviderUserKey()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ProviderUserKeyGet">
+            <summary>Sets the stub of MembershipUser.get_ProviderUserKey()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.ResetPassword">
+            <summary>Sets the stub of MembershipUser.ResetPassword()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.ResetPassword(System.String)">
+            <summary>Sets the stub of MembershipUser.ResetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ResetPassword01">
+            <summary>Sets the stub of MembershipUser.ResetPassword()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ResetPasswordString">
+            <summary>Sets the stub of MembershipUser.ResetPassword(String passwordAnswer)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.ToString">
+            <summary>Sets the stub of MembershipUser.ToString()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.ToString01">
+            <summary>Sets the stub of MembershipUser.ToString()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubMembershipUser.UnlockUser">
+            <summary>Sets the stub of MembershipUser.UnlockUser()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.UnlockUser01">
+            <summary>Sets the stub of MembershipUser.UnlockUser()</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubMembershipUser.UserName">
+            <summary>Sets the stub of MembershipUser.get_UserName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubMembershipUser.UserNameGet">
+            <summary>Sets the stub of MembershipUser.get_UserName()</summary>
+        </member>
+        <member name="T:System.Web.Security.Fakes.StubRoleProvider">
+            <summary>Stub type of System.Web.Security.RoleProvider</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+            <summary>Sets the stub of RoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.AddUsersToRolesStringArrayStringArray">
+            <summary>Sets the stub of RoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.ApplicationName">
+            <summary>Sets the stub of RoleProvider.get_ApplicationName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.ApplicationNameGet">
+            <summary>Sets the stub of RoleProvider.get_ApplicationName()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.ApplicationNameSetString">
+            <summary>Sets the stub of RoleProvider.set_ApplicationName(String value)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.AttachBackingFieldToApplicationName">
+            <summary>Attaches delegates to emulate StubRoleProvider.ApplicationName as a property with a backing field.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.CreateRole(System.String)">
+            <summary>Sets the stub of RoleProvider.CreateRole(String roleName)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.CreateRoleString">
+            <summary>Sets the stub of RoleProvider.CreateRole(String roleName)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.DeleteRole(System.String,System.Boolean)">
+            <summary>Sets the stub of RoleProvider.DeleteRole(String roleName, Boolean throwOnPopulatedRole)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.DeleteRoleStringBoolean">
+            <summary>Sets the stub of RoleProvider.DeleteRole(String roleName, Boolean throwOnPopulatedRole)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.Description">
+            <summary>Sets the stub of ProviderBase.get_Description()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.DescriptionGet">
+            <summary>Sets the stub of ProviderBase.get_Description()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.FindUsersInRole(System.String,System.String)">
+            <summary>Sets the stub of RoleProvider.FindUsersInRole(String roleName, String usernameToMatch)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.FindUsersInRoleStringString">
+            <summary>Sets the stub of RoleProvider.FindUsersInRole(String roleName, String usernameToMatch)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.GetAllRoles">
+            <summary>Sets the stub of RoleProvider.GetAllRoles()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.GetAllRoles01">
+            <summary>Sets the stub of RoleProvider.GetAllRoles()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.GetRolesForUser(System.String)">
+            <summary>Sets the stub of RoleProvider.GetRolesForUser(String username)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.GetRolesForUserString">
+            <summary>Sets the stub of RoleProvider.GetRolesForUser(String username)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.GetUsersInRole(System.String)">
+            <summary>Sets the stub of RoleProvider.GetUsersInRole(String roleName)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.GetUsersInRoleString">
+            <summary>Sets the stub of RoleProvider.GetUsersInRole(String roleName)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>Sets the stub of ProviderBase.Initialize(String name, NameValueCollection config)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.InitializeStringNameValueCollection">
+            <summary>Sets the stub of ProviderBase.Initialize(String name, NameValueCollection config)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubRoleProvider</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.IsUserInRole(System.String,System.String)">
+            <summary>Sets the stub of RoleProvider.IsUserInRole(String username, String roleName)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.IsUserInRoleStringString">
+            <summary>Sets the stub of RoleProvider.IsUserInRole(String username, String roleName)</summary>
+        </member>
+        <member name="P:System.Web.Security.Fakes.StubRoleProvider.Name">
+            <summary>Sets the stub of ProviderBase.get_Name()</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.NameGet">
+            <summary>Sets the stub of ProviderBase.get_Name()</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+            <summary>Sets the stub of RoleProvider.RemoveUsersFromRoles(String[] usernames, String[] roleNames)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.RemoveUsersFromRolesStringArrayStringArray">
+            <summary>Sets the stub of RoleProvider.RemoveUsersFromRoles(String[] usernames, String[] roleNames)</summary>
+        </member>
+        <member name="M:System.Web.Security.Fakes.StubRoleProvider.RoleExists(System.String)">
+            <summary>Sets the stub of RoleProvider.RoleExists(String roleName)</summary>
+        </member>
+        <member name="F:System.Web.Security.Fakes.StubRoleProvider.RoleExistsString">
+            <summary>Sets the stub of RoleProvider.RoleExists(String roleName)</summary>
+        </member>
+    </members>
+</doc>

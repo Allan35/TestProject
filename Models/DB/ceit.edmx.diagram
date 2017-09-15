@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e3912b0fb5b74ee7a5230a25f86fcb1a" Name="Diagram1">
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitAdministrator" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitCourse" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitSecurityQuestion" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitStudent" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitUserRole" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitUser" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.CeitYearLevel" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ceit_gwa_databaseModel1.sysdiagram" Width="1.5" PointX="5.75" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitUsers_CeitAdministrators" ManuallyRouted="false" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitStudents_CeitCourse" ManuallyRouted="false" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitStudents_CeitSecurityQuestions" ManuallyRouted="false" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitStudents_CeitYearLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitUsers_CeitStudents" ManuallyRouted="false" />
+        <AssociationConnector Association="ceit_gwa_databaseModel1.FK_CeitUsers_CeitUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
